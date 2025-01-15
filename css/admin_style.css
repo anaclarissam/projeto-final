@@ -254,26 +254,33 @@ section{
 
 .dashboard .box-container .box{
    border-radius: .5rem;
-   padding:2rem;
+   padding: 2rem;
    background-color: var(--white);
    box-shadow: var(--box-shadow);
-   border:var(--border);
+   border: var(--border);
    text-align: center;
+   height: 20rem;  /* Added fixed height */
+   display: flex;  /* Added */
+   flex-direction: column;  /* Added */
+   justify-content: center;  /* Added */
+   align-items: center;  /* Added */
 }
 
 .dashboard .box-container .box h3{
    font-size: 5rem;
-   color:var(--black); 
+   color: var(--black);
+   margin-bottom: 1rem;  /* Added */
 }
 
 .dashboard .box-container .box p{
-   margin-top: 1.5rem;
-   padding:1.5rem;
+   margin-top: 0;  /* Changed from 1.5rem */
+   padding: 1.5rem;
    background-color: var(--light-bg);
-   color:var(--purple);
+   color: var(--purple);
    font-size: 2rem;
    border-radius: .5rem;
-   border:var(--border);
+   border: var(--border);
+   width: 100%;  /* Added */
 }
 
 .add-products form{
@@ -330,6 +337,8 @@ section{
 
 .show-products .box-container .box img{
    height: 30rem;
+   width: 100%;           /* Added */
+   object-fit: contain;   /* Added */
 }
 
 .show-products .box-container .box .name{

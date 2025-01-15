@@ -22,6 +22,12 @@
    transition:all .2s linear;
 }
 
+.box img{
+   height: 30rem;
+   width: 100%;           /* Added */
+   object-fit: contain;   /* Added */
+}
+
 *::selection{
    background-color: var(--purple);
    color:var(--white);
